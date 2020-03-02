@@ -19,11 +19,12 @@ public class BeanConfiguration {
 		return builder.build();
 	}
 
+	
 	/* 
 	 * Temporary workaround for Cross Browser issues
-	 * with the ReactJS application.
+	 * with the ReactJS frontend application.
 	 */
-	/*@SuppressWarnings("rawtypes")
+	@SuppressWarnings("rawtypes")
 	@Bean
 	public FilterRegistrationBean corsFilter() {
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -37,6 +38,6 @@ public class BeanConfiguration {
 		FilterRegistrationBean bean = new FilterRegistrationBean(new CorsFilter(source));
 		bean.setOrder(0);
 		return bean;
-	}*/
+	}
 
 }

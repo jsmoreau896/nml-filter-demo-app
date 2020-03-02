@@ -61,8 +61,9 @@ class CountryServiceImplTest {
 		Country[] mockTests = { c1, c2, c3 };
 		
 		ResponseEntity<Country[]> mockResults = new ResponseEntity<Country[]>(mockTests, HttpStatus.OK);
+		
+		// TODO Review mock of RestTemplate to fix null pointer exception
 		Mockito.when(restTemplate.getForEntity(anyString(), Country[].class)).thenReturn(mockResults);
-
 
 		List<Country> countries = countryService.getCountries();
 
