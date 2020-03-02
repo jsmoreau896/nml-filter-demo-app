@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 
 import org.junit.Ignore;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Answers;
 import org.mockito.InjectMocks;
@@ -30,6 +30,7 @@ class CountryServiceImplTest {
 	private CountryServiceImpl countryService = new CountryServiceImpl();
 
 	
+	@Test
 	@Ignore
 	void testGetCountryListByApiCall_shouldReturnFilteredCountryListAlphabetical() {
 

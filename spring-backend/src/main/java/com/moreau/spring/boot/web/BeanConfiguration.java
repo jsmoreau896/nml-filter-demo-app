@@ -1,7 +1,5 @@
 package com.moreau.spring.boot.web;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,15 +12,13 @@ import org.springframework.web.filter.CorsFilter;
 public class BeanConfiguration {
 
 	@Bean
-	@Qualifier("restTemplate")
-	public RestTemplate restTemplate(RestTemplateBuilder builder) {
-		return builder.build();
+	RestTemplate restTemplate() {
+		return new RestTemplate();
 	}
 
-	
-	/* 
-	 * Temporary workaround for Cross Browser issues
-	 * with the ReactJS frontend application.
+	/*
+	 * Temporary workaround for Cross Browser issues with the ReactJS frontend
+	 * application.
 	 */
 	@SuppressWarnings("rawtypes")
 	@Bean

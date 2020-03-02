@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.moreau.spring.boot.web</groupId>
-	<artifactId>springbootweb</artifactId>
+	<artifactId>spring-demo-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springbootweb</name>
+	<name>spring-demo-app</name>
 	<description>Moreau Demo App</description>
 
 	<properties>
@@ -47,6 +47,18 @@
 			<artifactId>jstl</artifactId>
 		</dependency>
 
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
 		<!-- Webjars for jQuery and Bootstrap -->
 		<dependency>
 			<groupId>org.webjars</groupId>
@@ -66,23 +78,6 @@
 			<version>1.9.1</version>
 		</dependency>
 		
-		<!--Lombok -->
-		<dependency>
-		    <groupId>org.projectlombok</groupId>
-		    <artifactId>lombok</artifactId>
-		    <version>1.18.12</version>
-		    <scope>provided</scope>
-		</dependency>
-		
-
-     	<!-- We want to use JSP as the view. Default embedded servlet container for Spring Boot Starter Web is tomcat. -->
-		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
-
 	</dependencies>
 
 	<build>

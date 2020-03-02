@@ -12,10 +12,5 @@ public class SpringbootwebApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootwebApplication.class, args);
 	}
-
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();
-	}
 	
 }
