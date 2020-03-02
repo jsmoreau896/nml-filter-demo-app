@@ -1,6 +1,5 @@
 import React from 'react';
 import RowCreator from './RowCreator';
-import Axios from 'axios';
 
 
 class DisplayCountries extends React.Component {
@@ -46,34 +45,34 @@ class DisplayCountries extends React.Component {
     render(){
 
         return (<div>
-                    <div class="headerBox">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
+                    <div className="headerBox">
+                        <div className="row">
+                            <div className="col-sm-12 text-center">
                                 <h1>Search Countries</h1>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
+                        <div className="row">
+                            <div className="col-sm-12 text-center">
                                 <h3>Demo to filter the list of countries</h3><br/>
                             </div>
                         </div>
                     </div>
 
-                    <div class="searchBox">
-                        <div class="row text-right">
-                            <div class="col-sm-3"/>
-                            <div class="col-sm-6 text-center">
-                             <br/><input type="text" class="form-control input-lg" placeholder="Search any field by name" onChange={this.handleOnChange.bind(this)}/><br/>
+                    <div className="searchBox">
+                        <div className="row text-right">
+                            <div className="col-sm-3"/>
+                            <div className="col-sm-6 text-center">
+                             <br/><input type="text" className="form-control input-lg" placeholder="Search any field by name" onChange={this.handleOnChange.bind(this)}/><br/>
                             </div>
-                            <div class="col-sm-3"/>
+                            <div className="col-sm-3"/>
                         </div>
                     </div>
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12"><br/>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12"><br/>
 
-                                <table class="table table-striped table-bordered">
+                                <table className="table table-striped table-bordered">
                                     <thead>
                                         <tr>
                                             <th>CIOC</th>

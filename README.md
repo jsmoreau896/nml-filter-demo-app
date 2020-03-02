@@ -1,17 +1,30 @@
 # nml-filter-demo-app
 Search Filter Demo Application
 
-spring-backend
-This is the Spring web application that has both a frontend and APIs that are used for the ReactJS application.  
-To run the application:
+## Spring Backend (API / Fronend) ##
+This is a Spring Boot with MVC.  It has both a frontend for the traditional JSP approach.  It also exposes an API for the ReactJS application to call into to retrieve the data.
 
-Run Jar
+### Run Application ###
+To run jar from cmd line:
+'java -jar target/springbootweb-0.0.1-SNAPSHOT.jar'
 
-http://localhost:8080/demo/home
+To run using Maven
+'mvn spring-boot:run'
 
 
-react-frontend-app
+### Spring URL ###
+
+'http://localhost:8080/demo/home'
+
+
+
+## React Frontend ##
 This is a ReactJS application that calls to the Spring Boot application's API. 
-To run the application:  yarn start
 
-http://localhost:3000/
+### Start Application ###
+CD to /react-frontend-app directory. Open a Git Bash terminal and type the following command:
+'yarn start'
+
+
+### ReactJS Default URL ###
+'http://localhost:3000/'
