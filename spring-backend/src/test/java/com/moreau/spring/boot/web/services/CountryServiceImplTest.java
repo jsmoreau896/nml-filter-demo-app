@@ -36,26 +36,26 @@ class CountryServiceImplTest {
 		// Mock the test array
 		Country c1 = Country.builder()
 				.cioc("USA")
-				.name("United States")
-				.capital("Washington")
-				.region("America")
-				.subregion("North America")
+				.name("United States of America")
+				.capital("Washington, D.C.")
+				.region("Americas")
+				.subregion("Northern America")
 				.build();
 		
 		Country c2 = Country.builder()
-				.cioc("BOL")
-				.name("Boliva")
-				.capital("Washington")
-				.region("America")
-				.subregion("North America")
+				.cioc("PAN")
+				.name("Panama")
+				.capital("Panama City")
+				.region("Americas")
+				.subregion("Central America")
 				.build();
 		
 		Country c3 = Country.builder()
-				.cioc("AFG")
-				.name("Afghanistan")
-				.capital("Kabul")
-				.region("Middle East")
-				.subregion("North America")
+				.cioc("ASA")
+				.name("American Samoa")
+				.capital("Pago Pago")
+				.region("Oceania")
+				.subregion("Polynesia")
 				.build();
 		
 		Country[] mockTests = { c1, c2, c3 };
@@ -67,7 +67,7 @@ class CountryServiceImplTest {
 
 		List<Country> countries = countryService.getCountries();
 
-		assertEquals(countries.get(0).getName(), "Afghanistan");
+		assertEquals(countries.get(0).getName(), "American Samoa");
 
 	}
 
